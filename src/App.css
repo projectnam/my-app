@@ -1,38 +1,164 @@
-.App {
+@keyframes fadeInUp{
+  0%{transform:translate(0px, 100px); opacity: 0;}
+  100%{transform:translate(0px, 0); opacity: 1;}
+}
+body {
+  font-family: "Cera Pro Regular", sans-serif;
+  margin: 0;
+  background: #ffffff;
+  background-size: cover;
+  
+}
+.header {
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  padding: 0.5em;
+  margin: 20px;
+  font-size: 20px;
+  align-items: center;
+  
+}
+.button_demo {
+  border: 1px solid #171b2151;
+  border-radius: 8px;
   text-align: center;
+  cursor: pointer;
+  padding: 12px;
+  background-color: rgb(42, 108, 221);
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  animation:fadeInUp 1.2s;
+  
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  padding: 0 3em 0 3em;
+  
+  
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slogon {
+    color: white;
+    font-weight: 600;
+    margin: 2rem 3rem;
+    padding: 5px 100px;
+    text-align: right;
+    font-size: 28px;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+.slogon h1 {
+  margin-bottom: 0;
+  font-weight: 500;
+  animation:fadeInUp 0.5s ease backwards;
+}
+.slogon p {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0;
+  animation:fadeInUp 0.7s ease backwards;
+}
+.all-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+.list li {
+  margin: 5px;
+  animation:fadeUp 0.9s ease backwards;
+}
+.end {
+  font-size: 35px;
+  font-weight: 500;
+  
+  
+}
+.slogon span {
+  animation:fadeInUp 2s;
+}
+
+.overlay a {
+  color: white;
+  text-decoration: none;
+ 
+}
+
+video {
+  position: absolute;
+  filter: brightness(50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -99;
+}
+
+.overlay {
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+nav a {
+    color: inherit;
+    padding: 0 12px;
+    text-decoration: none;
+   
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.discription {
+  font-size: 26px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+
+.disc-list {
+  list-style-type: none;
+  font-size: 16px;
+  margin-left: 20px;
+  width: 41.6666666667%;
+}
+.disc-list p {
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s;
+  
+}
+.disc-list h3 {
+  margin: 0;
+  font-weight: 500;
+  
+}
+.disc-list-p {
+  margin: 2px;
+  background-color: rgba(159, 185, 234, 0.448);
+  padding: 10px 20px;
+  
 }
